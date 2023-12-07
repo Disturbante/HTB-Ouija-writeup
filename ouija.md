@@ -263,11 +263,7 @@ git clone https://github.com/iagox86/hash_extender
 cd hash_extender
 sudo make CFLAGS="-w" install #to skip deprecation warnings
 ```
-Now to craft the attack we actually need to brute force the key length so i generated a bunch of payloads like that:
-```bash
-
-```
-then i tried them in the following request:
+I tried crafting cookies and indentifications with this command generating a bunch of payload based on secret length:
 ```bash
 hash_extender -s 4b22a0418847a51650623a458acc1bba5c01f6521ea6135872b9f15b56b988c1 -d bot1:bot -a ::admin:True --secret-min=4 --secret-max=25
 ```
