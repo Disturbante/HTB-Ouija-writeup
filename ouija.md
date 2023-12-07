@@ -93,7 +93,7 @@ So i tried to craft my payload in Burpsuite:
 !But before sending the request we first need to update a repeater option that update automatically our content length<br>
 The whole point of the exploit is about the length of the first request being truncated by an integer overflow.<br>
 	
-![disable update content-length](./pic/update_length)
+![disable update content-length](./pic/update_length.png)
 	
 Now we have our payload ready and we can see what is behind this Proxy with this request (\n\r are important):
 ```bash
